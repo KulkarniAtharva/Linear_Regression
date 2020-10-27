@@ -45,3 +45,10 @@ plt.title('Salary vs Experience  (Training Set)')
 plt.xlabel('Years of experience')
 plt.ylabel('Salary')
 plt.show()
+
+#calculating the Residuals
+
+from sklearn import metrics
+print('MEAN ABSOLUTE ERROR:-',metrics.mean_absolute_error(Y_Test,Y_Pred))
+print('MEAN squared ERROR:-',metrics.mean_squared_error(Y_Test,Y_Pred))
+print('Root mean squared ERROR:-',np.sqrt(metrics.mean_absolute_error(Y_Test,Y_Pred)))
